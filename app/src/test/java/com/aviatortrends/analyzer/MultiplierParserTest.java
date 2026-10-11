@@ -1,0 +1,1 @@
+package com.aviatortrends.analyzer;import org.junit.Test;import static org.junit.Assert.*;public class MultiplierParserTest{@Test public void parses(){assertEquals(2.85,MultiplierParser.parse("Balance 12 2,85x").get(0),.001);}@Test public void rejectsUnmarked(){assertTrue(MultiplierParser.parse("12.50 99").isEmpty());}}

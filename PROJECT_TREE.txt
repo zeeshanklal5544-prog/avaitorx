@@ -1,0 +1,10 @@
+AviatorTrendsAnalyzer/
+├── app/build.gradle
+├── app/src/main/AndroidManifest.xml
+├── app/src/main/java/com/aviatortrends/analyzer/{MainActivity,CaptureService,OverlayService,Result,ResultStore,MultiplierParser,Stats}.java
+├── app/src/test/java/com/aviatortrends/analyzer/MultiplierParserTest.java
+├── .github/workflows/android.yml
+├── build.gradle
+├── settings.gradle
+├── gradle.properties
+└── README.md

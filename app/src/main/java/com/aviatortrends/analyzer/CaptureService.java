@@ -1,0 +1,3 @@
+package com.aviatortrends.analyzer;
+import android.app.*;import android.content.*;import android.os.*;
+public class CaptureService extends Service {public IBinder onBind(Intent i){return null;}public int onStartCommand(Intent i,int f,int s){if(Build.VERSION.SDK_INT>=26)((NotificationManager)getSystemService(NOTIFICATION_SERVICE)).createNotificationChannel(new NotificationChannel("capture","Screen capture",NotificationManager.IMPORTANCE_LOW));startForeground(7,new Notification.Builder(this,"capture").setContentTitle("Aviator monitoring active").setContentText("Screen capture is processed on-device").setSmallIcon(android.R.drawable.ic_menu_view).build());return START_NOT_STICKY;}}
